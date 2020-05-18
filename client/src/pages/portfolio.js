@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer";
-import PortfolioList from "../../portfolio.json"
-import NavTab from "../components/NavTab";
+import PortfolioList from "../portfolio.json"
+import Navtab from "../components/Navtab";
 import Mobile from "../components/Mobile"
 
 function Portfolio() {
@@ -11,7 +11,7 @@ function Portfolio() {
             <div id="wrap">
                 <div id="main" className="clear-top">
                     <div className="row">
-                        <NavTab />
+                        <Navtab />
                         <div className="col-md-12">
                             <div>
                                 <div>
@@ -32,11 +32,8 @@ function Portfolio() {
                                                         </div>
                                                     </div>
                                                     {PortfolioList.map(list => (
-                                                        <Mobile
-                                                            img src=""
-                                                            altImg=""
-                                                            href=""
-                                                            altHref=""
+                                                        <Mobile {...list}
+                                                            
                                                       />
                                                     ))}
                                                 </div>

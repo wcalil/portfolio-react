@@ -1,5 +1,5 @@
 import React from "react";
-import NavTab from "../components/NavTab";
+import Navtab from "../components/Navtab";
 import Footer from "../components/Footer";
 
 function About() {
@@ -8,7 +8,7 @@ function About() {
         <div id="wrap">
             <div id="main" className="clear-top">
                 <div className="row">
-                <NavTab />
+                <Navtab />
                     <div>
                         <div className="row">
                             <div className="col-md-12">

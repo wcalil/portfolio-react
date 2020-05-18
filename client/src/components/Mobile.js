@@ -1,18 +1,18 @@
 import React from "react";
-import portfolio from "../../portfolio.json";
+import portfolio from "../portfolio.json";
 
-function Mobile() {
+function Mobile(props) {
    const eachPortfolio = portfolio.name
     return (
        
             <div className="card card-margin">
                 <img
-                    src=""
+                    src={props.src}
                     className="card-img-top"
-                    altImg="" />
+                    alt={props.altImg} />
                 <a
-                    href=""
-                    altHref="" >
+                    href={props.href}
+                    alt={props.altHref} >
                     <div className="card-body">
                         <p className="card-text-edited"> {eachPortfolio}</p>
                     </div>

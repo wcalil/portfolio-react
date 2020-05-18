@@ -1,6 +1,7 @@
 import React from "react";
-import NavTab from "../components/NavTab";
-import Footer from "../components/Footer"
+import Navtab from "../components/Navtab";
+import Footer from "../components/Footer";
+import Form from "../components/Form"
 
 function Contact() {
     return (
@@ -11,8 +12,8 @@ function Contact() {
                     <div className="row">
                         <div className="col-md-12">
                             <div>
-                                <div className="row" style="margin-bottom:2rem">
-                                    < NavTab />
+                                <div className="row" style={{marginBottom:"2rem"}}>
+                                    < Navtab />
                                 </div>
                             </div>
                             <div>

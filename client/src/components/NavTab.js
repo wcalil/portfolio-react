@@ -1,12 +1,12 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-function NavTab() {
+function Navtab() {
 
     const location = useLocation();
 
     return (
-        <div className="row" style="margin-bottom:2rem">
+        <div className="row" style={{ marginBottom: '2rem' }}>
             <div className="col-md-12">
                 <div className="row margin-centered">
                     <div className="col-md-11 whiteBlock">
@@ -71,5 +71,5 @@ function NavTab() {
     )
 }
 
-export default NavTab
+export default Navtab;
 
