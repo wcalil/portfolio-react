@@ -1,14 +1,12 @@
 import React from "react";
-import Navtab from "../components/Navtab";
-import Footer from "../components/Footer";
+import AboutComp from "../components/AboutComp";
+import "../assets/css/styles.css"
+// import ProfileImageComp from "../components/ProfileImageComp";
 
 function About() {
 
     return (
-        <div id="wrap">
-            <div id="main" className="clear-top">
-                <div className="row">
-                <Navtab />
+                 <div className="row">
                     <div>
                         <div className="row">
                             <div className="col-md-12">
@@ -28,7 +26,7 @@ function About() {
                                         </div>
                                         <div className="row flexWrap">
                                             <div className="col-md-12"></div>
-                                            <About />
+                                            <AboutComp />
                                         </div>
                                     </div>
                                     <div className="col-md-1 whiteBlock">
@@ -41,9 +39,6 @@ function About() {
                         <div className="col-md-12"><br /></div>
                     </div>
                 </div>
-            </div>
-            <Footer />
-        </div>
     )
 }
 export default About

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-function Navtab() {
+function NavtabComp() {
 
     const location = useLocation();
 
@@ -71,5 +71,5 @@ function Navtab() {
     )
 }
 
-export default Navtab;
+export default NavtabComp;
 

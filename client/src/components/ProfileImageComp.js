@@ -1,10 +1,10 @@
 import React from "react";
 
 
-function ProfileImage() {
+function ProfileImageComp() {
     return (
         <img
-            src="assets/images/Wilson-Calil.jpg"
+            src="../../assets/images/Wilson-Calil"
             alt="Wilson-Calil"
             style={{width:"170px", height:"170px", marginRight:"15px"}}
             className="imgWilson"
@@ -14,5 +14,5 @@ function ProfileImage() {
     )
 }
 
-export default ProfileImage
+export default ProfileImageComp;
 

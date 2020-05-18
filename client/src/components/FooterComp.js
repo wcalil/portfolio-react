@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer () {
+function FooterComp () {
     return (
         <footer className="footer">
             © 2020 Wilson Calil
@@ -8,4 +8,4 @@ function Footer () {
     )
 }
 
-export default Footer
+export default FooterComp;

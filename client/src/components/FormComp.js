@@ -1,6 +1,6 @@
 import React from "react";
 
-function Form() {
+function FormComp() {
 
     return (
 
@@ -38,4 +38,4 @@ function Form() {
     )
 }
 
-export default Form
+export default FormComp;

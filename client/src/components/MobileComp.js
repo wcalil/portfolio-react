@@ -1,7 +1,7 @@
 import React from "react";
 import portfolio from "../portfolio.json";
 
-function Mobile(props) {
+function MobileComp(props) {
    const eachPortfolio = portfolio.name
     return (
        
@@ -22,4 +22,4 @@ function Mobile(props) {
     )
 }
 
-export default Mobile
+export default MobileComp;

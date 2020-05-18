@@ -1,11 +1,11 @@
 import React from "react";
-import ProfileImage from "./ProfileImage";
+import ProfileImageComp from "./ProfileImageComp";
 
-function About() {
+function AboutComp () {
 
     return (
         <div>
-            <p> <ProfileImage />Wilson
+            <p> <ProfileImageComp />Wilson
                 Calil
                 is a
                 senior
@@ -66,4 +66,4 @@ function About() {
 
 }
 
-export default About
+export default AboutComp;
