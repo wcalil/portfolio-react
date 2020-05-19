@@ -1,9 +1,9 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function NavtabComp() {
 
-    const location = useLocation();
+    // const location = useLocation();
 
     return (
         <div className="row" style={{ marginBottom: '2rem' }}>
@@ -32,28 +32,32 @@ function NavtabComp() {
                                             <li className="nav-item">
                                                 <Link
                                                     to="/"
-                                                    className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
+                                                    // className={location.pathname === "/" ? "nav-link active" : "nav-link"}
+                                                    >
                                                     About
         </Link>
                                             </li>
                                             <li className="nav-item">
                                                 <Link
                                                     to="/portfolio"
-                                                    className={location.pathname === "/porfolio" ? "nav-link active" : "navlink"}>
+                                                    // className={location.pathname === "/porfolio" ? "nav-link active" : "navlink"}
+                                                    >
                                                     Portfolio
        </Link>
                                             </li>
                                             <li className="nav-item">
                                                 < Link
                                                     to="/contact"
-                                                    className={location.pathname === "/contact" ? "nav-link active" : "navlink"}>
+                                                    // className={location.pathname === "/contact" ? "nav-link active" : "navlink"}
+                                                    >
                                                     Contact
         </Link>
-                                            </li>
+                                            </li>                
                                             <li className="nav-item">
                                                 <Link
-                                                    to="../assets/WilsonCalil_Resume.pdf"
-                                                    className={location.pathname === "/assets/WlsonCalil_Resume.pdf" ? "nav-link active" : "nav link"}>
+                                                    to="/download"
+                                                    // className={location.pathname === "/assets/WlsonCalil_Resume.pdf" ? "nav-link active" : "nav link"}
+                                                    >
                                                     Download
                     </Link>
                                             </li>

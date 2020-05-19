@@ -1,8 +1,10 @@
 import React from "react";
 import portfolio from "../portfolio.json";
+import "../assets/images/JavaScriptQuiz.JPG"
+
 
 function MobileComp(props) {
-   const eachPortfolio = portfolio.name
+   const portfolioName = portfolio.name
     return (
        
             <div className="card card-margin">
@@ -14,7 +16,7 @@ function MobileComp(props) {
                     href={props.href}
                     alt={props.altHref} >
                     <div className="card-body">
-                        <p className="card-text-edited"> {eachPortfolio}</p>
+                        <p className="card-text-edited"> {portfolio.name}</p>
                     </div>
                 </a>
             </div>
@@ -22,4 +24,4 @@ function MobileComp(props) {
     )
 }
 
-export default MobileComp;
+export default MobileComp

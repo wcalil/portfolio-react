@@ -5,7 +5,8 @@ function AboutComp () {
 
     return (
         <div>
-            <p> <ProfileImageComp />Wilson
+            <ProfileImageComp />
+            <p> Wilson
                 Calil
                 is a
                 senior

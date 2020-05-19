@@ -157,6 +157,11 @@ overflow:auto;
 padding-bottom:150px; /* this needs to be bigger than footer height*/
 }
 
+li {
+  margin-right: 2em;
+ 
+}
+
 .footer
 {
 position: relative;

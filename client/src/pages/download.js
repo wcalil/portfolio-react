@@ -1,8 +1,7 @@
 import React from "react";
-import FormComp from "../components/FormComp"
-import "../assets/css/styles.css"
+import Resume from "../assets/WilsonCalil_Resume.pdf"
 
-function Contact() {
+function Download() {
     return (
         <div>
             <div className="row">
@@ -25,14 +24,26 @@ function Contact() {
                                         </div>
                                         <div className="row">
                                             <div className="col-md-12 line">
-                                                <h1 id="h1">Contact</h1>
+                                                <h1 id="h1">Download Resume</h1>
                                             </div>
                                         </div>
-                                        <div className="row">
+                                        <div className="row" style={{ fontSize: "30px", textAlign:"center" }}>
                                             <div className="col-md-12">
-                                                < FormComp />
+                                                <br />
+                                                <a
+                                                    href={Resume}
+                                                    style={{ color: "darkGray"}}
+                                                >
+                                                    Click here to download Wilson Calil's resume
+</a>
                                             </div>
                                         </div>
+                                        <br />
+                                        <br />
+                                        <br />
+                                        <br />
+                                        <br />
+                                        <br />
                                     </div>
                                     <div className="col-md-1 whiteBlock">
                                     </div>
@@ -45,10 +56,10 @@ function Contact() {
                     </div>
                 </div>
             </div>
-            <div className="row"><br/><br/><br/></div>
+            <div className="row"><br /><br /><br /><br /><br /></div>
         </div>
 
     )
 }
 
-export default Contact
+export default Download;

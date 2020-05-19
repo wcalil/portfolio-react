@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "img src": "assets/images/JavaScriptQuiz.JPG",
+    "src": "../assets/images/JavaScriptQuiz.JPG",
     "altImg": "Java Script Quiz",
     "href": "https://wcalil.github.io/homework-4",
     "altHref": "Java Script Quiz",
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "img src": "assets/images/foodFairThought.JPG",
+    "imgSrc": "assets/images/foodFairThought.JPG",
     "altImg": "Food Place Generator",
     "href": "https://foodfairthought.com/",
     "altHref": "Food Place Generator",
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "img src": "assets/images/weatherForecast.JPG",
+    "imgSrc": "assets/images/weatherForecast.JPG",
     "altImg": "Weather Forecast App",
     "href": "https://wcalil.github.io/homework-6/",
     "altHref": "Weather Forecast App",
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "img src": "assets/images/workDayScheduler.JPG",
+    "imgSrc": "assets/images/workDayScheduler.JPG",
     "altImg": "Work Day Scheduler App",
     "href": "https://wcalil.github.io/homework-5/",
     "altHref": "Work Day Scheduler App",
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "img src": "assets/images/passwordGenerator.jpg",
+    "imgSrc": "assets/images/passwordGenerator.jpg",
     "altImg": "Random Password Generator",
     "href": "https://wcalil.github.io/homework-3/",
     "altHref": "Random Password Generator",
@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "img src": "assets/images/Hangrr.jpg",
+    "imgSrc": "assets/images/Hangrr.jpg",
     "altImg": "Hangrr",
     "href": "https://hangrr.herokuapp.com",
     "altHref": "Hangrr",
@@ -49,11 +49,12 @@
   },
   {
     "id": 7,
-    "img src": "assets/images/noteTaker.jpg",
+    "imgSrc": "assets/images/noteTaker.jpg",
     "altImg": "noteTaker",
     "href": "https://thawing-cliffs-00299.herokuapp.com",
     "altHref": "noteTaker",
     "name": "The Note Taker with Express"
   }
+ 
 ]
 
