@@ -1,10 +1,10 @@
 import React from "react";
-import portfolio from "../portfolio.json";
+// import portfolio from "../portfolio.json";
 import "../assets/images/JavaScriptQuiz.JPG"
 
 
 function MobileComp(props) {
-   const portfolioName = portfolio.name
+   const portfolioName = props.name
     return (
        
             <div className="card card-margin">
@@ -16,7 +16,7 @@ function MobileComp(props) {
                     href={props.href}
                     alt={props.altHref} >
                     <div className="card-body">
-                        <p className="card-text-edited"> {portfolio.name}</p>
+                        <p className="card-text-edited"> {portfolioName}</p>
                     </div>
                 </a>
             </div>

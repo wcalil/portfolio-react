@@ -9,8 +9,6 @@ import FooterComp from "./components/FooterComp";
 import  "./assets/WilsonCalil_Resume.pdf"
 import "./assets/css/styles.css";
 
-
-
 function App() {
 
   return (

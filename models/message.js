@@ -1,14 +1,20 @@
-var Sequelize = require("sequelize");
-var sequelize = require("../config/connection.js");
-const Schema = sequelize.Schema;
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
 const messageSchema = new Schema({
-  name: { type: String, required: true },
-  emailAdress: { type: String, required: true },
-  message: String,
+  name: {
+    type: String,
+    required: true
+  },
+  emailAdress: {
+    type: String,
+    required: true
+  },
+  message: {
+    String
+  }
 });
 
-const Message = sequelize.model("Message", messageSchema);
+const Message = mongoose.model("Message", messageSchema);
 
 module.exports = Message;
-

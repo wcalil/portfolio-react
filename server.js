@@ -1,23 +1,36 @@
-/***************|
-|* DEPENDECIES *|
-|***************/
-/* GENERAL */
-// Utilities for working with file and directory paths
-const path = require('path');
-/* WEB FRAMEWORKS */
-// lightweight web framework for node server
-const express = require('express');
-// Initialize express under app variable
+const express = require("express");
+
+const mongoose = require("mongoose");
 const app = express();
 const PORT = process.env.PORT || 3001;
-/*****************|
-|* SET UP ROUTES *| 
-|*****************/
-// Setup app to serve static files from React App depending on dev/prod
-if (process.env.NODE_ENV === 'production') {
-	app.use(express.static(path.join(__dirname, './client', 'build')));
+
+const db = require("./models")
+
+// Define middleware here
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
 }
-/*********************************|
-|* LISTEN FOR CONNECTION ON PORT *| 
-|*********************************/
-app.listen(PORT, () => { console.log(`App listening on PORT: ${PORT}`) });
+// Add routes, both API and view
+
+
+// Connect to the Mongo DB
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/contactdb");
+
+app.post("/api/message", ({ body }, res) => {
+	console.log(body)
+	db.Message.create(body)
+	  .then(dbMessage => {
+		res.json(dbMessage);
+	  })
+	  .catch(err => {
+		res.json(err);
+	  });
+  });
+
+// Start the API server
+app.listen(PORT, function() {
+  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+});
