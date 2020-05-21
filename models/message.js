@@ -6,7 +6,7 @@ const messageSchema = new Schema({
     type: String,
     required: true
   },
-  emailAdress: {
+  email: {
     type: String,
     required: true
   },

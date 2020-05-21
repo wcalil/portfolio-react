@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import API from "../utils/API";
+import API from "../utils/API.js";
 
 function FormComp() {
 const [name, setName] = useState();
@@ -14,17 +14,17 @@ const [message, setMessage] = useState()
         console.log(message)
 
         if (name && email && message) {
+            console.log(name, email, message)
             API.saveMessage({
               name: name,
-              emailAdress: email,
+              email: email,
               message: message
             })
               .then(res => alert("Message sent"))
               .catch(err => console.log(err));
           }
         };
-        
-    
+          
 
     return (
 
